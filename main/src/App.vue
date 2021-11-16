@@ -1,15 +1,19 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <div id="main-app">
+    <div id="main-nav">
       <router-link to="/">main</router-link> |
-      <router-link to="/about">main-about</router-link>
+      <router-link to="/about">main-about</router-link> | 
+      <router-link to="/first-vue">vue1</router-link> | 
+      <router-link to="/second-vue">vue2</router-link>
     </div>
     <router-view/>
+    <div id="firstVue"></div>
+    <div id="secondVue"></div>
   </div>
 </template>
 
 <style lang="scss">
-#app {
+#main-app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +21,7 @@
   color: #2c3e50;
 }
 
-#nav {
+#main-nav {
   padding: 30px;
 
   a {
